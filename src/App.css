@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* ---------------------------
+   FONTS
+--------------------------- */
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("./assets/fonts/custom-font.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VeganStyle";
+  src: url("./assets/fonts/VeganStylePersonalUse-5Y58.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DancingScript";
+  src: url("./assets/fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Orangerie";
+  src: url("./assets/fonts/OrangeriePersonalUseOnlyRegular-ALaXL.otf") format("opentype");
+  font-display: swap;
+}
+
+
+
+/* ---------------------------
+   THEME TOKENS (v4 way)
+--------------------------- */
+
+@theme {
+  /* Colors */
+  --color-vibrant-pink: #ff4d6d;
+  --color-soft-pink: #ffb3c1;
+  --color-deep-red: #c9184a;
+  --color-bg-cream: #fff0f3;
+  --color-warm-white: #fff5f7;
+  --color-muted-rose: #a4133c;
+
+  --color-romantic-50: #fff0f3;
+  --color-romantic-100: #ffccd5;
+  --color-romantic-200: #ffb3c1;
+  --color-romantic-300: #ff8fa3;
+  --color-romantic-400: #ff758f;
+  --color-romantic-500: #ff4d6d;
+  --color-romantic-600: #c9184a;
+  --color-romantic-700: #a4133c;
+  --color-romantic-800: #800f2f;
+  --color-romantic-900: #590d22;
+  --color-romantic-950: #2b050f;
+
+  /* Fonts */
+  --font-custom: "CustomFont", serif;
+  --font-handwriting: "CustomFont", cursive;
+  --font-sans: Inter, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-name: "VeganStyle";
+  --font-message: "Orangerie";
+}
+
+
+/* ---------------------------
+   UTILITIES (backgrounds + animations)
+--------------------------- */
+
+@layer utilities {
+
+  /* ===== Fonts ===== */
+  .font-custom {
+    font-family: var(--font-custom);
+  }
+
+  .font-handwriting {
+    font-family: var(--font-handwriting);
+  }
+
+  /* ===== Background Images ===== */
+  .bg-dotted-pattern {
+    background-image: radial-gradient(#ff4d6d 1.5px, transparent 1.5px);
+  }
+
+  .bg-dotted-sm {
+    background-size: 24px 24px;
+  }
+
+  .bg-custom {
+    background-image: url("./assets/images/custom-bg.png");
+  }
+
+  /* ===== Animations ===== */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 3s infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+
+/* ---------------------------
+   KEYFRAMES
+--------------------------- */
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}

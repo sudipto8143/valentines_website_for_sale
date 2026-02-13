@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
+
+/* 
+  To use your OWN font:
+  1. Replace 'src/assets/fonts/custom-font.ttf' with your file (keep the name same).
+  2. If your font is not .ttf, update the 'src' line below.
+*/
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./assets/fonts/custom-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #c9184a;
+  background-color: #fff0f3;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #fff0f3;
+}
+
+#root {
+  width: 100%;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(74, 4, 4, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
