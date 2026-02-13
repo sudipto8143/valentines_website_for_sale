@@ -44,8 +44,8 @@ function App() {
 
       <MusicPlayer autoPlay={true} />
 
-      <p className="fixed bottom-4 left-1/2 -translate-x-1/2 text-[10px] md:text-xs text-vibrant-pink/90 tracking-[0.2em] font-bold uppercase cursor-default hover:scale-105 transition-transform duration-300 drop-shadow-sm">
-        Made with <span className="animate-pulse inline-block">❤️</span> by a <span className='tracking-tight text-vibrant-pink text-lg'>পাগল</span>
+      <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-[10px] md:text-xs text-vibrant-pink/90 tracking-[0.2em] font-bold uppercase cursor-default hover:scale-105 transition-transform duration-300 drop-shadow-sm">
+        Made with <span className="animate-pulse inline-block">❤️</span> by <span className='tracking-tight text-vibrant-pink text-lg'>Sudipto</span>
       </p>
 
 

@@ -16,9 +16,10 @@ const Name = () => {
         text-vibrant-pink
         drop-shadow-[0_0_2px_rgba(255,77,109,0.6)]
         pt-5
+        tracking-wider
       "
             >
-                Shreya
+                Alivia
             </h2>
 
             <div className="w-24 h-1 bg-vibrant-pink mx-auto mt-2 rounded-full animate-pulse" />

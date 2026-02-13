@@ -45,6 +45,10 @@ const ValentineProposal = ({ onAccept }) => {
                     className="h-[200px] mx-auto mb-8"
                 />
 
+                <h1 className="text-lg md:text-3xl font-serif px-5 md:px-48 text-vibrant-pink mb-4">
+                    Hey Alivia, you have made my world softer, brighter, and a little more meaningful. I don't just like you... I admire you, care for you, and choose you - every single day. So here I am, with all my heart -
+                </h1>
+
                 <h1 className="text-4xl md:text-6xl font-custom text-deep-red mb-8 drop-shadow-sm">
                     Will you be my Valentine?
                 </h1>

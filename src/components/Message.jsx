@@ -32,7 +32,7 @@ const Message = () => {
                     </h3>
 
                     <p className="font-serif text-base  md:text-lg leading-7 text-rose-700/90">
-                        Happy Valentine's Day my love, living with you is very peaceful. Thanks for bearing me
+                        Happy Valentine's Day my love, living with you is very peaceful.
                     </p>
 
                     {/* fixed nested p */}
